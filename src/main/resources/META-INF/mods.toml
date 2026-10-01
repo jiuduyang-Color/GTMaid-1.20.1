@@ -1,0 +1,44 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="gtmaid"
+version="${mod_version}"
+displayName="GTMaid"
+authors="MeowmelMuku (original GT_Maid 1.12.2), jiuduyang (1.20.1 port)"
+credits="1.20.1 port by jiuduyang. Original mod GT_Maid by MeowmelMuku. Built against GregTech CEu Modern and Touhou Little Maid."
+logoFile="logo.png"
+description='''
+Touhou Little Maid x GregTech addon.
+Adds GregTech automation work modes for maids: ore mining, ore washing, machine maintenance, logistics hauling, power generation, and GT tool processing (hammer / file / saw / cutter / mortar).
+1.20.1 port built against GregTech CEu Modern.
+'''
+
+[[dependencies.gtmaid]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.gtmaid]]
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.gtmaid]]
+modId="touhou_little_maid"
+mandatory=true
+versionRange="[1.5.3,1.6)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.gtmaid]]
+modId="gtceu"
+mandatory=true
+versionRange="[7.0.0,)"
+ordering="AFTER"
+side="BOTH"

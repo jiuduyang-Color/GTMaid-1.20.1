@@ -1,0 +1,38 @@
+# ---- Gradle ----
+.gradle/
+.gradle_repo/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ---- 本地开发环境（自带 JDK 2GB Gradle 缓存，绝不能上传）----
+runtime/
+
+# ---- 运行目录 ----
+run/
+runs/
+
+# ---- 本地依赖 jar（授权原因不分发，见 libs/README.md）----
+libs/*.jar
+
+# ---- IDE ----
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+
+# ---- 日志 ----
+*.log
+logs/
+crash-reports/
+
+# ---- 懒人包自带的本地便捷脚本（依赖本地 runtime/，不随仓库分发）----
+*.exe
+[0-9].*.bat
